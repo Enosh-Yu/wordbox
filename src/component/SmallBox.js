@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 
-const SmallBox = ({item, x, y, active, onClicked, clickedLength}) => {
+const SmallBox = ({item, x, y, active, onClicked, clickedLength, isAnswerChecked}) => {
     //const [active, setActive] = useState(false);
     const isMount = useRef(false);
     const handleClick = () => {
@@ -22,7 +22,8 @@ const SmallBox = ({item, x, y, active, onClicked, clickedLength}) => {
     //     }
     // }, [active]);
     return (
-    <li className={`${active ? "active":""}`} onClick={handleClick}>{item.alphabet}</li>
+    <li className={`${active ? "active":""} ${isAnswerChecked ? "answer":""}`} 
+    onClick={handleClick}>{item.alphabet}</li>
     );
 }
 

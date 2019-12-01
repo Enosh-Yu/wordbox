@@ -4,5 +4,6 @@ ul, li{list-style: none;margin:0;padding:0}
   text-align: center;
 }
 .App ul li{width:20px;display:block;height:20px;float:left;}
+.App ul li.answer{background-color: #ff0;}
 .App ul li.active{background-color: #f00;}
 .App ul{width: 100px;}
